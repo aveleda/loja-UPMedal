@@ -1,0 +1,49 @@
+{
+    "slider-layout#home": {
+      "children": [
+        "image#brand1",
+        "image#brand2",
+        "image#brand3",
+        "image#brand4",
+        "image#brand5",
+        "image#brand6"
+      ],
+      "props": {
+        "autoplay": {
+          "timeout": 7000,
+          "stopOnHover": true
+        }
+      }
+    },
+    "image#brand1": {
+      "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1627336500-01.png" 
+      }
+    },
+    "image#brand2": {
+      "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1629219624-POST.png"
+      }
+    },
+    "image#brand3": {
+      "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1629141914-POST.png"
+      }
+    },
+    "image#brand4": {
+      "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1628715231-POST.png"
+      }
+    },
+    "image#brand5": {
+      "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1628610235-POST.png"
+      }
+    },
+    "image#brand6": {
+      "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1628112525-POST.png"
+      }
+    }
+  }
+  

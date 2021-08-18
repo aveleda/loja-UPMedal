@@ -1,0 +1,17 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text",
+      "flex-layout.row",
+      "slider-layout#home"
+    ]
+  },
+  "rich-text": { 
+    "props": { 
+      "text": "UPMedal",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  }
+}
