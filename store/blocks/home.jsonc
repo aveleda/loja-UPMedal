@@ -10,7 +10,7 @@
       "rich-text#desktop", 
       "image#banner",
       "flex-layout.row",
-      "slider-layout#home"]
+      "tab-layout#home"]
   },
 
   "responsive-layout.mobile#mobile": {
@@ -18,6 +18,59 @@
       "rich-text#mobile", 
       "flex-layout.row",
       "slider-layout#home"]
+  },
+
+  "tab-layout#home": {
+    "children": ["tab-list#home", "tab-content#home"]
+  },
+  "tab-list#home": {
+    "children": ["tab-list.item#home1", "tab-list.item#home2"]
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "majorAppliances",
+      "label": "Camisas",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "label": "Tenis",
+      "tabId": "electronics"
+    }
+  },
+  "tab-content#home": {
+    "children": ["tab-content.item#home1", "tab-content.item#home2"]
+  },
+  "tab-content.item#home1": {
+    "children": [
+      "rich-text#home1",
+      "slider-layout#home"],
+    "props": {
+      "tabId": "majorAppliances"
+    }
+  },
+  "tab-content.item#home2": {
+    "children": [
+      "rich-text#home2",
+      "slider-layout#home"],
+    "props": {
+      "tabId": "electronics"
+    }
+  },
+  "rich-text#home1": {
+    "props": {
+      "text": "Camisas de esportes",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#home2": {
+    "props": {
+      "text": "Tenis de esportes",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
   },
 
   "image#banner": {
