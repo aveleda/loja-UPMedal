@@ -10,11 +10,20 @@
       ],
       "props": {
         "autoplay": {
-          "timeout": 7000,
+          "timeout": 3000,
           "stopOnHover": true
-        }
+        }, 
+        "itemsPerPage": {
+            "desktop": 3,
+            "tablet": 2,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "carousel"
       }
     },
+    
     "image#brand1": {
       "props": {
         "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1627336500-01.png" 

@@ -1,11 +1,69 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
-      "rich-text",
-      "flex-layout.row",
-      "slider-layout#home"
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile"
     ]
   },
+  "responsive-layout.desktop#desktop": {
+    "children": [
+      "rich-text#desktop", 
+      "image#banner",
+      "flex-layout.row",
+      "slider-layout#home"]
+  },
+
+  "responsive-layout.mobile#mobile": {
+    "children": [
+      "rich-text#mobile", 
+      "flex-layout.row",
+      "slider-layout#home"]
+  },
+
+  "image#banner": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T202644Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b61f80ca4bf944cbfe46164847726209abd6c3ab246176e98a55b9b4d0cf9bbe"
+    }
+  },
+
+  "image#desktop": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      },
+      "alt": "UPMedal"
+    }
+  },
+
+  "image#mobile": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      },
+      "alt": "UPMedal"
+    }
+  },
+
+  "rich-text#desktop": {
+    "props": {
+      "text": "# UPMedal - Grande Promocão",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "rich-text#mobile": {
+    "props": {
+      "text": "### UPMedal - Grande Promoão",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
   "rich-text": { 
     "props": { 
       "text": "UPMedal",
